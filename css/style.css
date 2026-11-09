@@ -1,0 +1,107 @@
+/* 
+Pallette:
+Forest Green #2F4F3A Headers and primary buttons; the wilds of the New World
+Parchment Cream #F3E9D2 Page backgrounds; quest notices and paper
+Hunter Bronze #B07A2A Accents, borders, and icons; armor and gear
+Rathalos Red #A63D2F Alerts and key call-to-action buttons
+Charcoal #2B2B2B Body text for strong readability
+ */
+
+
+
+
+
+* {
+    box-sizing: border-box; 
+}
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 32px;
+    background-color: #F3E9D2;
+    
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    line-height: 1.3;
+    color: #2F4F3A
+}
+
+#top {background-color: #2F4F3A;
+    padding: 32px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#top h1 {
+    color: #F5F5DC;
+    font-size: 48px;
+    margin: 0;
+    transform: translateY(50px);
+    position: relative;
+}
+
+#top p {
+    color: #B07A2A;
+    font-size: 24px;
+    margin: 0;
+    transform: translateY(50px);
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+nav {
+    background-color: #2B2B2B;
+    padding: 16px;
+    text-align: center;
+}
+
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-right: 3px solid #B07A2A;
+    padding: 0 8px;
+    border-left: 3px solid #B07A2A
+}
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 26px 0;
+    padding: 32px ;
+
+    border: 3px solid #B07A2A;
+}
+#QuestBoard h3 {
+    border-left: 4px solid #A63D2F;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+}
+
+section p {
+    color: #2B2B2B;
+    border-left: 4px solid #B07A2A;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+}
