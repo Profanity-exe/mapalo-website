@@ -17,7 +17,7 @@ Charcoal #2B2B2B Body text for strong readability
     box-sizing: border-box; 
 }
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
@@ -41,7 +41,7 @@ h3 {
 }
 
 #top h1 {
-    color: #F5F5DC;
+    color: #F3E9D2;
     font-size: 48px;
     margin: 0;
     transform: translateY(50px);
@@ -75,7 +75,7 @@ nav {
 }
 
 nav a {
-    color: #F5F5DC;
+    color: #F3E9D2;
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -106,4 +106,18 @@ section p {
     border-left: 4px solid #B07A2A;
     padding: 10px 14px;
     margin-bottom: 16px;
+}
+
+.card {
+    border: 2px solid #B07A2A;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.card.featured {
+    border: 3px solid #A63D2F;
+}
+
+.card h3 {
+    margin-top: 0;
 }
