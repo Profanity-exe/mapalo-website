@@ -2,22 +2,29 @@
 <html lang="en">    <!--NOTE THAT THIS CODE WAS REHASHED FROM A PREVIOUS ACTIVITY-->
     <head>
     <meta charset="UTF-8">
+    <!-- Makes the page fit phone screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Hunter's Guild</title>
 
+        <!-- Browser tab icon (the Guild emblem) -->
         <link rel="icon" href="images/pngaaa.com-8810391.png">
+        <!-- Cinzel (headings) and Lato (body) from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Main stylesheet -->
         <link rel="stylesheet" href="css/style.css">
         
     </head>
     <body>
+        <!-- HEADER: logo, title, tagline, and Join button -->
         <header id="top">
             <img class="logo" src="images/pngaaa.com-8810391.png" alt="The Hunters Guild emblem" width="200" height="200">    
             <h1>The Hunter's Guild</h1>        <!--HERO SECTION-->
                 <p>Train. Request Hunts. Accept Quests. </p>
+                <!-- Jumps down to the sign-up section (id="Hunter") -->
                 <a class="btn" href="#Hunter">Join the Guild</a>
                 
         </header>
+        <!-- NAV: each link jumps to the section with the matching id -->
         <nav>
             <a href="#About">About</a>
             <a href="#QuestBoard">Quest Board</a>
@@ -31,10 +38,10 @@
             <h2>About the Guild</h2>
                 <p>The Hunters Guild protects settlements, trains hunters, and investigates dangerous monsters</p>
                 <ul>
-                    <li>Protect - Keep villages safe from dangerous monsters</li>
-                    <li>Train - Help new hunters begin their journey</li>
-                    <li>Research - Support the study of monster ecology</li>
-                    <li>Request - Post quests for Hunters to take on</li>
+                    <li><strong>Protect</strong> - Keep villages safe from dangerous monsters</li>
+                    <li><strong>Train</strong> - Help new hunters begin their journey</li>
+                    <li><strong>Research</strong> - Support the study of monster ecology</li>
+                    <li><strong>Request</strong> - Post quests for Hunters to take on</li>
             </ul>
         </section>
 
@@ -43,9 +50,11 @@
                 <p>Your Next Quest Begins Here</p>
                 <p>Current Quests</p>
         
+            <!-- Quest cards: .featured gives the Capture card a red border -->
             <div class="card">
                 <h3>Hunt</h3>
                     <p>Search for what monster you're looking to hunt!</p>
+                    <!-- Difficulty is shown with star characters (plain text, not images) -->
                     <p class="difficulty">Difficulty: ★★★☆☆</p>
                     <p>Refreshes daily at 7:00 AM.</p>
             </div>
@@ -66,6 +75,7 @@
         <section id="Hunter"> <!--SIGNUP SECTION-->
             <h2>Become a Hunter</h2>
             <p>Begin your Journey, receive training, and earn your Guild Card.</p>
+                <!-- The form only looks the part for now; it has no action, so it does not send anywhere yet -->
                 <form>
                     <label for="fullname">Full name</label>
                     <input type="text" id="fullname" name="fullname">
@@ -75,6 +85,7 @@
                 </form>
         </section>
     </main>
+    <!-- FOOTER: contact details -->
     <footer>
         <p>Contact details: <a href="mailto:mapalorussel@gmail.com">mapalorussel@gmail.com</a>, 09915900908 | ©2026 Profanity-exe</p>
     </footer>

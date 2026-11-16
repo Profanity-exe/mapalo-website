@@ -13,9 +13,11 @@ Charcoal #2B2B2B Body text for strong readability
 
 
 
+/* Page-wide setting: padding and borders are counted inside an element's width */
 * {
     box-sizing: border-box; 
 }
+/* Page background, base font, and text size */
 body {
     font-family: Lato, Helvetica, sans-serif;
     font-size: 16px;
@@ -26,6 +28,7 @@ body {
     
 }
 
+/* Headings use Cinzel in Forest Green */
 h1,
 h2,
 h3 {
@@ -34,6 +37,7 @@ h3 {
     color: #2F4F3A
 }
 
+/* HERO: Forest Green banner. overflow: hidden keeps the floated logo inside the header */
 #top {background-color: #2F4F3A;
     padding: 32px;
     text-align: center;
@@ -52,6 +56,7 @@ h3 {
     margin: 0 0 16px;
 }
 
+/* Logo floats left so the title and tagline sit beside it */
 .logo {
     max-width: 100%;
     height: auto;
@@ -64,6 +69,7 @@ p {
     margin-bottom: 14px;
 }
 
+/* NAV BAR: Charcoal strip with centered links */
 nav {
     background-color: #2B2B2B;
     padding: 16px;
@@ -80,17 +86,20 @@ nav a {
     border-left: 3px solid #B07A2A
 }
 
+/* MAIN: limits page width and centers the content */
 main {
     max-width: 1500px;
     margin: 0 auto;
 }
 
+/* SECTIONS: bronze border around each part of the page */
 section {
     margin: 26px 0;
     padding: 32px ;
 
     border: 3px solid #B07A2A;
 }
+/* Red marker beside the quest card titles */
 #QuestBoard h3 {
     border-left: 4px solid #A63D2F;
     padding: 10px 14px;
@@ -104,6 +113,7 @@ section p {
     margin-bottom: 16px;
 }
 
+/* QUEST CARDS: bordered notices, the featured card gets a red border */
 .card {
     border: 2px solid #B07A2A;
     padding: 16px 20px;
@@ -118,6 +128,7 @@ section p {
     margin-top: 0;
 }
 
+/* BUTTONS: red call-to-action style, used by the Join the Guild link and the form button */
 .btn {
     display: inline-block;
     background-color: #A63D2F;
@@ -133,6 +144,7 @@ section p {
     background-color: #2F4F3A;
 }
 
+/* FORM: labels and text boxes */
 label {
     display: block;
     font-weight: bold;
@@ -158,10 +170,12 @@ form .btn {
     cursor: pointer;
 }
 
+/* HOVER: links turn bronze when pointed at */
 nav a:hover {
     color: #B07A2A;
 }
 
+/* FOOTER: Forest Green strip with cream text */
 footer {
     background-color: #2F4F3A;
     color: #F3E9D2;
@@ -183,7 +197,24 @@ footer a:hover {
     color: #B07A2A;
 }
 
+/* Difficulty star line on the quest cards */
 .difficulty {
     color: #B07A2A;
     font-weight: bold;
+}
+
+/* ABOUT LIST: square bullets and a bronze left border to match the paragraphs */
+#About ul {
+    list-style-type: square;
+    border-left: 4px solid #B07A2A;
+    padding: 10px 14px 10px 36px;
+    margin: 0;
+}
+
+#About li {
+    margin-bottom: 8px;
+}
+
+#About strong {
+    color: #2F4F3A;
 }
