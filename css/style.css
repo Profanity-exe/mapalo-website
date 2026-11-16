@@ -157,3 +157,28 @@ form .btn {
     font-size: 16px;
     cursor: pointer;
 }
+
+nav a:hover {
+    color: #B07A2A;
+}
+
+footer {
+    background-color: #2F4F3A;
+    color: #F3E9D2;
+    padding: 16px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #F3E9D2;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #B07A2A;
+}
