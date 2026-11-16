@@ -132,3 +132,28 @@ section p {
 .btn:hover {
     background-color: #2F4F3A;
 }
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #2F4F3A;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+#fullname,
+#email {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #B07A2A;
+    color: #2B2B2B;
+}
+
+form .btn {
+    margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
