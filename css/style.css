@@ -182,3 +182,8 @@ footer a {
 footer a:hover {
     color: #B07A2A;
 }
+
+.difficulty {
+    color: #B07A2A;
+    font-weight: bold;
+}
