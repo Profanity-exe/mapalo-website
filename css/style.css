@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 32px;
     background-color: #F3E9D2;
-    
+    background-image: url(../images/grain.svg); /* paper grain; path is relative to this css file */
 }
 
 /* Headings use Cinzel in Forest Green */
@@ -42,18 +42,22 @@ h3 {
     padding: 32px;
     text-align: center;
     overflow: hidden;
+    background-image: url(../images/grain-light.svg);
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.55); /* dark edges, like worn cloth */
 }
 
 #top h1 {
     color: #F3E9D2;
     font-size: 48px;
     margin: 24px 0 0;
+    text-shadow: 3px 3px 0 #2B2B2B; /* hard shadow, like carved lettering */
 }
 
 #top p {
     color: #B07A2A;
     font-size: 24px;
     margin: 0 0 16px;
+    text-shadow: 1px 1px 0 #2B2B2B; /* keeps the bronze tagline readable over the texture */
 }
 
 /* Logo floats left so the title and tagline sit beside it */
@@ -74,6 +78,9 @@ nav {
     background-color: #2B2B2B;
     padding: 16px;
     text-align: center;
+    background-image: url(../images/grain-light.svg);
+    border-top: 3px solid #B07A2A;
+    border-bottom: 3px solid #B07A2A;
 }
 
 nav a {
@@ -98,6 +105,8 @@ section {
     padding: 32px ;
 
     border: 3px solid #B07A2A;
+    background-color: rgba(176, 122, 42, 0.1); /* faint bronze tint, 10% opaque */
+    box-shadow: inset 0 0 50px rgba(43, 43, 43, 0.25), 6px 6px 0 rgba(43, 43, 43, 0.8); /* worn inner edges + hard drop shadow */
 }
 /* Red marker beside the quest card titles */
 #QuestBoard h3 {
@@ -118,6 +127,10 @@ section p {
     border: 2px solid #B07A2A;
     padding: 16px 20px;
     margin-bottom: 20px;
+    overflow: hidden; /* card grows to contain its floated badge image */
+    background-color: #F3E9D2;
+    background-image: url(../images/grain.svg);
+    box-shadow: inset 0 0 25px rgba(176, 122, 42, 0.4), 3px 3px 0 rgba(43, 43, 43, 0.6); /* pinned-notice look */
 }
 
 .card.featured {
@@ -138,10 +151,12 @@ section p {
     padding: 12px 28px;
     border: 3px solid #B07A2A;
     text-decoration: none;
+    box-shadow: 3px 3px 0 #2B2B2B;
 }
 
 .btn:hover {
     background-color: #2F4F3A;
+    box-shadow: 1px 1px 0 #2B2B2B; /* shadow shrinks so the button looks pressed */
 }
 
 /* FORM: labels and text boxes */
@@ -181,6 +196,8 @@ footer {
     color: #F3E9D2;
     padding: 16px;
     text-align: center;
+    background-image: url(../images/grain-light.svg);
+    border-top: 4px solid #B07A2A;
 }
 
 footer p {
@@ -217,4 +234,15 @@ footer a:hover {
 
 #About strong {
     color: #2F4F3A;
+}
+
+/* Quest badge images: float to the left edge of each card */
+.quest-icon {
+    float: left;
+}
+
+/* Card text starts to the right of the badge (96px image + 18px gap) so the borders don't run under it */
+.card h3,
+.card p {
+    margin-left: 114px;
 }
