@@ -108,6 +108,15 @@ section {
     background-color: rgba(176, 122, 42, 0.1); /* faint bronze tint, 10% opaque */
     box-shadow: inset 0 0 50px rgba(43, 43, 43, 0.25), 6px 6px 0 rgba(43, 43, 43, 0.8); /* worn inner edges + hard drop shadow */
 }
+/* Section titles: carved-banner look with capitals and a double bronze underline */
+section h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 8px;
+    border-bottom: 4px double #B07A2A;
+    text-shadow: 1px 1px 0 rgba(176, 122, 42, 0.5);
+}
+
 /* Red marker beside the quest card titles */
 #QuestBoard h3 {
     border-left: 4px solid #A63D2F;
@@ -139,6 +148,8 @@ section p {
 
 .card h3 {
     margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* BUTTONS: red call-to-action style, used by the Join the Guild link and the form button */
@@ -188,6 +199,7 @@ form .btn {
 /* HOVER: links turn bronze when pointed at */
 nav a:hover {
     color: #B07A2A;
+    background-color: #2F4F3A; /* forest green highlight behind the link */
 }
 
 /* FOOTER: Forest Green strip with cream text */
