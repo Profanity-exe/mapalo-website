@@ -50,29 +50,52 @@
                 <p>Your Next Quest Begins Here</p>
                 <p>Current Quests</p>
         
-            <!-- Quest cards: .featured gives the Capture card a red border; each card has a badge image (images/*.svg) -->
-            <div class="card">
-                <img class="quest-icon" src="images/hunt.svg" alt="Hunt quest emblem: two crossed greatswords" width="96" height="96">
-                <h3>Hunt</h3>
-                    <p>Search for what monster you're looking to hunt!</p>
-                    <!-- Difficulty is shown with star characters (plain text, not images) -->
-                    <p class="difficulty">Difficulty: ★★★☆☆</p>
-                    <p>Refreshes daily at 7:00 AM.</p>
-            </div>
-            <div class="card featured">
-                <img class="quest-icon" src="images/capture.svg" alt="Capture quest emblem: a rope net" width="96" height="96">
-                <h3>Capture</h3>
-                    <p>Search a Monster you want to Capture!</p>
-                    <p class="difficulty">Difficulty: ★★★★☆</p>
-                    <p>Refreshes daily at 7:00 AM.</p>
-            </div>
-            <div class="card">
-                <img class="quest-icon" src="images/gather.svg" alt="Gather quest emblem: a pickaxe" width="96" height="96">
-                <h3>Gather</h3>
-                    <p>Look to accept gathering requests from various locales</p>
-                    <p class="difficulty">Difficulty: ★☆☆☆☆</p>
-                    <p>Always Open!</p>
-                    <p class="note">Join the hunter's guild, discover new quests, and help keep the new world safe.</p>
+            <!-- Quest board layout: cards on the left, monster alerts on the right (both float) -->
+            <div class="quest-layout">
+                <div class="quest-list">
+                    <!-- Quest cards: .featured gives the Capture card a red border; each card has a badge image (images/*.svg) -->
+                    <div class="card">
+                        <img class="quest-icon" src="images/hunt.svg" alt="Hunt quest emblem: two crossed greatswords" width="96" height="96">
+                        <h3>Hunt</h3>
+                            <p>Search for what monster you're looking to hunt!</p>
+                            <!-- Difficulty is shown with star characters (plain text, not images) -->
+                            <p class="difficulty">Difficulty: ★★★☆☆</p>
+                            <p>Refreshes daily at 7:00 AM.</p>
+                    </div>
+                    <div class="card featured">
+                        <img class="quest-icon" src="images/capture.svg" alt="Capture quest emblem: a rope net" width="96" height="96">
+                        <h3>Capture</h3>
+                            <p>Search a Monster you want to Capture!</p>
+                            <p class="difficulty">Difficulty: ★★★★☆</p>
+                            <p>Refreshes daily at 7:00 AM.</p>
+                    </div>
+                    <div class="card">
+                        <img class="quest-icon" src="images/gather.svg" alt="Gather quest emblem: a pickaxe" width="96" height="96">
+                        <h3>Gather</h3>
+                            <p>Look to accept gathering requests from various locales</p>
+                            <p class="difficulty">Difficulty: ★☆☆☆☆</p>
+                            <p>Always Open!</p>
+                            <p class="note">Join the hunter's guild, discover new quests, and help keep the new world safe.</p>
+                    </div>
+                </div>
+
+                <!-- MONSTER ALERTS: left border color shows danger (green = low, bronze = moderate, red = extreme) -->
+                <aside class="side-panel">
+                    <img class="alert-icon" src="images/alert.svg" alt="Monster alert emblem: three claw slashes" width="72" height="72">
+                    <h3>Monster Alerts</h3>
+                    <p class="alert alert-low"><strong>Great Jagras</strong><br>Danger: Low. Spotted raiding farms near the village outskirts.</p>
+                    <p class="alert alert-moderate"><strong>Anjanath</strong><br>Danger: Moderate. Aggressive and territorial by the river crossing.</p>
+                    <p class="alert alert-extreme"><strong>Nergigante</strong><br>Danger: Extreme. Elder Dragon sighted along the trade route.</p>
+                    <p class="alert-note">Posted by the Research Commission.</p>
+                </aside>
+
+                <!-- STAR LEGEND: explains the difficulty stars on the cards (reuses the alert colors) -->
+                <aside class="side-panel panel-gap">
+                    <h3>Reading the Stars</h3>
+                    <p class="alert alert-low"><strong>&#9733;&#9734;&#9734;&#9734;&#9734; to &#9733;&#9733;&#9734;&#9734;&#9734;</strong><br>Low Rank. Good for new hunters.</p>
+                    <p class="alert alert-moderate"><strong>&#9733;&#9733;&#9733;&#9734;&#9734; to &#9733;&#9733;&#9733;&#9733;&#9734;</strong><br>High Rank. Bring your Palico.</p>
+                    <p class="alert alert-extreme"><strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong><br>Master Rank. Veterans only.</p>
+                </aside>
             </div>
         </section>
         <section id="Hunter"> <!--SIGNUP SECTION-->

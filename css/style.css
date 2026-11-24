@@ -258,3 +258,105 @@ footer a:hover {
 .card p {
     margin-left: 114px;
 }
+
+/* QUEST LAYOUT: cards float left, the side panels float right. overflow: hidden makes the wrapper grow to contain both floats */
+.quest-layout {
+    overflow: hidden;
+    padding-right: 6px; /* leaves room so the alerts panel's shadow isn't cut off */
+}
+
+.quest-list {
+    float: left;
+    width: 66%;
+}
+
+/* SIDE PANELS (monster alerts, star legend): same worn-notice look as the quest cards */
+.side-panel {
+    float: right;
+    width: 31%;
+    padding: 16px 18px;
+    border: 2px solid #B07A2A;
+    background-color: #F3E9D2;
+    background-image: url(../images/grain.svg);
+    box-shadow: inset 0 0 25px rgba(176, 122, 42, 0.4), 3px 3px 0 rgba(43, 43, 43, 0.6);
+}
+
+.alert-icon {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.side-panel h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Each alert (and legend line) is a paragraph; the thick left border color shows the danger level */
+.alert {
+    border-left-width: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.alert-low {
+    border-left-color: #2F4F3A;
+}
+
+.alert-moderate {
+    border-left-color: #B07A2A;
+}
+
+.alert-extreme {
+    border-left-color: #A63D2F;
+}
+
+.panel-gap {
+    margin-top: 20px; /* space between the two stacked side panels */
+}
+
+.alert-note {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* PHONES: these rules only apply when the screen is 600px wide or less */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    section {
+        padding: 20px 14px;
+    }
+
+    /* logo and quest badges stop floating and sit centered above the text */
+    .logo,
+    .quest-icon {
+        float: none;
+        display: block;
+        margin: 0 auto 12px;
+    }
+
+    .card h3,
+    .card p {
+        margin-left: 0;
+    }
+
+    /* quest cards and side panels stack at full width */
+    .quest-list,
+    .side-panel {
+        float: none;
+        width: 100%;
+    }
+
+    .quest-layout {
+        padding-right: 0;
+    }
+
+    #top h1 {
+        font-size: 32px;
+    }
+}
