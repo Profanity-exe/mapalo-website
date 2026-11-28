@@ -81,9 +81,6 @@ nav {
     background-image: url(../images/grain-light.svg);
     border-top: 3px solid #B07A2A;
     border-bottom: 3px solid #B07A2A;
-    top: env(safe-area-inset-top, 0px); 
-    position: sticky;
-    z-index: 50;
 }
 
 nav a {
@@ -323,6 +320,18 @@ footer a:hover {
     font-size: 14px;
     font-style: italic;
     margin-bottom: 0;
+}
+
+/* QUESTS PAGE: the list uses the same .card style, so just remove the default numbers and indent */
+.quest-page {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* "View all quests" and similar buttons below a group of cards */
+.quest-more {
+    margin-top: 20px;
 }
 
 /* PHONES: these rules only apply when the screen is 600px wide or less */

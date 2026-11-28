@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quest Board | The Hunter's Guild</title>
+    <link rel="icon" href="images/pngaaa.com-8810391.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Same stylesheet as the home page, so this page looks the same -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: same as the home page, with a different tagline -->
+    <header id="top">
+        <img class="logo" src="images/pngaaa.com-8810391.png" alt="The Hunters Guild emblem" width="200" height="200">
+        <h1>The Hunter's Guild</h1>
+        <p>Every open quest, easiest first.</p>
+        <a class="btn" href="index.html#Hunter">Join the Guild</a>
+    </header>
+
+    <!-- NAV: links back to the home page sections use index.html#id -->
+    <nav aria-label="Main">
+        <a href="index.html#About">About</a>
+        <a href="quests.html">Quest Board</a>
+        <a href="index.html#Hunter">Become a Hunter</a>
+    </nav>
+
+    <main>
+        <!-- id="QuestBoard" reuses the quest board styles from the home page -->
+        <section id="QuestBoard">
+            <h2>All Quests</h2>
+            <p>Quests are listed from 1 star (easiest) to 5 stars (hardest).</p>
+
+            <!-- An ordered list (ol): the order of the items matters, and here it is difficulty -->
+            <ol class="quest-page">
+                <li class="card">
+                    <img class="quest-icon" src="images/gather.svg" alt="Gather quest emblem: a pickaxe" width="96" height="96">
+                    <h3>Herb Run</h3>
+                    <p class="difficulty">Difficulty: ★☆☆☆☆</p>
+                    <p>Collect herbs and honey for the Guild’s healers before the next hunting party leaves.</p>
+                    <p>Type: Gather &middot; Location: Ancient Forest &middot; Reward: 300 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/hunt.svg" alt="Hunt quest emblem: two crossed greatswords" width="96" height="96">
+                    <h3>Farm Raider</h3>
+                    <p class="difficulty">Difficulty: ★☆☆☆☆</p>
+                    <p>A lone Great Jagras keeps raiding a farm at the village edge. Drive it off.</p>
+                    <p>Type: Hunt &middot; Location: Ancient Forest &middot; Reward: 500 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/investigate.svg" alt="Investigate quest emblem: a magnifying glass" width="96" height="96">
+                    <h3>Strange Tracks</h3>
+                    <p class="difficulty">Difficulty: ★★☆☆☆</p>
+                    <p>The Research Commission needs a hunter to follow unfamiliar tracks and report what made them.</p>
+                    <p>Type: Investigate &middot; Location: Wildspire Waste &middot; Reward: 700 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/gather.svg" alt="Gather quest emblem: a pickaxe" width="96" height="96">
+                    <h3>Canteen Supplies</h3>
+                    <p class="difficulty">Difficulty: ★★☆☆☆</p>
+                    <p>Gather mushrooms and spices to restock the Canteen.</p>
+                    <p>Type: Gather &middot; Location: Wildspire Waste &middot; Reward: 800 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/hunt.svg" alt="Hunt quest emblem: two crossed greatswords" width="96" height="96">
+                    <h3>Territorial Anjanath</h3>
+                    <p class="difficulty">Difficulty: ★★★☆☆</p>
+                    <p>An Anjanath has claimed the river crossing, and travelers cannot pass.</p>
+                    <p>Type: Hunt &middot; Location: Ancient Forest &middot; Reward: 2,000 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/capture.svg" alt="Capture quest emblem: a rope net" width="96" height="96">
+                    <h3>Pukei-Pukei Study</h3>
+                    <p class="difficulty">Difficulty: ★★★☆☆</p>
+                    <p>The Research Commission wants a Pukei-Pukei captured alive for study.</p>
+                    <p>Type: Capture &middot; Location: Coral Highlands &middot; Reward: 2,500 Zenny</p>
+                </li>
+                <li class="card">
+                    <img class="quest-icon" src="images/capture.svg" alt="Capture quest emblem: a rope net" width="96" height="96">
+                    <h3>Trade Route Menace</h3>
+                    <p class="difficulty">Difficulty: ★★★★☆</p>
+                    <p>Capture the Rathalos that keeps circling the trade route.</p>
+                    <p>Type: Capture &middot; Location: Wildspire Waste &middot; Reward: 5,000 Zenny</p>
+                </li>
+                <li class="card featured">
+                    <img class="quest-icon" src="images/hunt.svg" alt="Hunt quest emblem: two crossed greatswords" width="96" height="96">
+                    <h3>Elder Dragon Alert</h3>
+                    <p class="difficulty">Difficulty: ★★★★★</p>
+                    <p>Nergigante has been sighted along the trade route. Master Rank hunters only.</p>
+                    <p>Type: Hunt &middot; Location: Elder’s Recess &middot; Reward: 12,000 Zenny</p>
+                </li>
+            </ol>
+
+            <a class="btn quest-more" href="index.html#Hunter">Join the Guild to accept quests</a>
+        </section>
+    </main>
+
+    <!-- FOOTER: contact details -->
+    <footer>
+        <p>Contact details: <a href="mailto:mapalorussel@gmail.com">mapalorussel@gmail.com</a>, 09915900908 | &copy;2026 Profanity-exe</p>
+    </footer>
+</body>
+</html>
