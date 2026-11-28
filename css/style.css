@@ -81,6 +81,9 @@ nav {
     background-image: url(../images/grain-light.svg);
     border-top: 3px solid #B07A2A;
     border-bottom: 3px solid #B07A2A;
+    top: env(safe-area-inset-top, 0px); 
+    position: sticky;
+    z-index: 50;
 }
 
 nav a {
