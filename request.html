@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request a Hunt | The Hunter's Guild</title>
+    <link rel="icon" href="images/pngaaa.com-8810391.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Same stylesheet as the other pages -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: same as the other pages, with a different tagline -->
+    <header id="top">
+        <img class="logo" src="images/pngaaa.com-8810391.png" alt="The Hunters Guild emblem" width="200" height="200">
+        <h1>The Hunter's Guild</h1>
+        <p>In trouble? Ask the Guild for a hunter.</p>
+        <a class="btn" href="index.html#Hunter">Join the Guild</a>
+    </header>
+
+    <!-- NAV: links to the other pages -->
+    <nav aria-label="Main">
+        <a href="index.html#About">About</a>
+        <a href="quests.html">Quest Board</a>
+        <a href="request.html">Request a Hunt</a>
+        <a href="index.html#Hunter">Become a Hunter</a>
+    </nav>
+
+    <main>
+        <section id="Request">
+            <h2>Request a Hunt</h2>
+
+            <!-- Palico helper: floats to the right so the form sits beside it -->
+            <div class="palico-box">
+                <img class="palico" src="images/palico.svg" alt="The Palico, the Guild's cat helper, wearing a hunter's headband" width="120" height="120">
+                <p class="palico-say">Tell me where the trouble is and I'll fetch a hunter!</p>
+            </div>
+
+            <p>Villages, merchants, and the Research Commission can ask the Guild for help. Tell us where the monster is and how urgent it is, and a hunter will be assigned.</p>
+
+            <!-- The form only looks the part for now; it has no action, so it does not send anywhere yet -->
+            <form>
+                <label for="location">Location</label>
+                <input type="text" class="field" id="location" name="location">
+
+                <label for="monster">Monster type</label>
+                <input type="text" class="field" id="monster" name="monster">
+
+                <!-- select makes a dropdown; each option is one choice in the list -->
+                <label for="urgency">Urgency</label>
+                <select class="field" id="urgency" name="urgency">
+                    <option>Low: a nuisance, no one is hurt</option>
+                    <option>Medium: travel or farms are at risk</option>
+                    <option>High: people are in danger now</option>
+                </select>
+
+                <label for="contactname">Your name</label>
+                <input type="text" class="field" id="contactname" name="contactname">
+
+                <label for="contactemail">Email</label>
+                <input type="email" class="field" id="contactemail" name="contactemail">
+
+                <input type="submit" class="btn" value="Send Request">
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER: contact details -->
+    <footer>
+        <p>Contact details: <a href="mailto:mapalorussel@gmail.com">mapalorussel@gmail.com</a>, 09915900908 | &copy;2026 Profanity-exe</p>
+    </footer>
+</body>
+</html>
+    

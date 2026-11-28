@@ -81,6 +81,9 @@ nav {
     background-image: url(../images/grain-light.svg);
     border-top: 3px solid #B07A2A;
     border-bottom: 3px solid #B07A2A;
+    position: sticky; /* stays in place, then sticks to the top of the screen while scrolling */
+    top: env(safe-area-inset-top, 0px); /* sticks below a phone's notch or status bar; 0px on computers */
+    z-index: 10; /* keeps the nav on top of the cards as they scroll underneath */
 }
 
 nav a {
@@ -115,6 +118,11 @@ section h2 {
     padding-bottom: 8px;
     border-bottom: 4px double #B07A2A;
     text-shadow: 1px 1px 0 rgba(176, 122, 42, 0.5);
+}
+
+/* When a link jumps to a section, stop a little early so the sticky nav doesn't cover its title */
+section {
+    scroll-margin-top: 80px;
 }
 
 /* Red marker beside the quest card titles */
@@ -180,7 +188,8 @@ label {
 }
 
 #fullname,
-#email {
+#email,
+.field { /* .field = the boxes on the Request a Hunt form */
     display: block;
     width: 100%;
     max-width: 400px;
@@ -334,6 +343,39 @@ footer a:hover {
     margin-top: 20px;
 }
 
+/* Quick link under the Join button in the header */
+.hero-link {
+    display: block;
+    margin-top: 14px;
+    color: #F3E9D2;
+    text-decoration: underline;
+}
+
+.hero-link:hover {
+    color: #B07A2A;
+}
+
+/* PALICO helper on the Request a Hunt page: floats right, speech bubble under the badge */
+.palico-box {
+    float: right;
+    width: 220px;
+    margin-left: 24px;
+    text-align: center;
+}
+
+.palico {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.palico-say {
+    border: 2px solid #B07A2A;
+    border-radius: 12px;
+    background-color: #F3E9D2;
+    font-style: italic;
+    text-align: left;
+}
+
 /* PHONES: these rules only apply when the screen is 600px wide or less */
 @media (max-width: 600px) {
     body {
@@ -366,6 +408,13 @@ footer a:hover {
 
     .quest-layout {
         padding-right: 0;
+    }
+
+    /* the Palico helper sits centered above the form instead of beside it */
+    .palico-box {
+        float: none;
+        width: 100%;
+        margin-left: 0;
     }
 
     #top h1 {
